@@ -30,7 +30,7 @@ public class AnalisisDatosPensiones {
     public String key;
     public int value;
     public boolean flag;
-    
+     //Comentario en el constructor
     public AnalisisDatosPensiones(String llave, int valor, boolean flag_1){
         key=llave;
         value=valor;
