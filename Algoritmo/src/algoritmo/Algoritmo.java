@@ -26,10 +26,14 @@ public class Algoritmo {
         int[] arreglo={6,5,3,1,8,7,2,4};
         Ordenamiento objetoOrdenamiento= new Ordenamiento();
         startTime=System.nanoTime();
-        objetoOrdenamiento.InsertionSort(arreglo);
+        //objetoOrdenamiento.InsertionSort(arreglo);
         endTime=System.nanoTime();
-        System.out.println("El tiempo de ejecuciòn fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
+        System.out.println("El tiempo de ejecució del algoritmo de Insertion Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         
+         startTime=System.nanoTime();
+        objetoOrdenamiento.SelectionSort(arreglo);
+        endTime=System.nanoTime();
+        System.out.println("El tiempo de ejecución del algoritmo de Selection Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         
     }
     

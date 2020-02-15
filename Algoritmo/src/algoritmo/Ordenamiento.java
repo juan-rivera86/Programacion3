@@ -40,13 +40,24 @@ public class Ordenamiento {
             }
             arregloEntrada[contadorComparacion]=numeroEvaluado;
             ImprimirArregloAOrdenar(arregloEntrada);
-           
-        
-        
-        }
-        
-    
+         }
     }
+    
+    public void SelectionSort(int[] arregloEntrada){
+        for(int posicionArreglo=0; posicionArreglo < arregloEntrada.length;posicionArreglo++){
+            int posicionMinimo=posicionArreglo;
+            for(int posicion=posicionArreglo; posicion < arregloEntrada.length;posicion++){
+                if(arregloEntrada[posicion]<arregloEntrada[posicionMinimo]){
+                    posicionMinimo=posicion;
+                }
+            }
+            int temporal=arregloEntrada[posicionArreglo];
+            arregloEntrada[posicionArreglo]=arregloEntrada[posicionMinimo];
+            arregloEntrada[posicionMinimo]=temporal;
+             ImprimirArregloAOrdenar(arregloEntrada);
+        }
+    }
+    
     
     
     
