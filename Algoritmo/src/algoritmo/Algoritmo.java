@@ -25,16 +25,40 @@ public class Algoritmo {
         */
         int[] arreglo={6,5,3,1,8,7,2,4};
         Ordenamiento objetoOrdenamiento= new Ordenamiento();
+        Busqueda objetoBusqueda=new Busqueda();
         startTime=System.nanoTime();
         //objetoOrdenamiento.InsertionSort(arreglo);
         endTime=System.nanoTime();
         System.out.println("El tiempo de ejecució del algoritmo de Insertion Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         
-         startTime=System.nanoTime();
-        objetoOrdenamiento.SelectionSort(arreglo);
+        startTime=System.nanoTime();
+        //objetoOrdenamiento.SelectionSort(arreglo);
         endTime=System.nanoTime();
         System.out.println("El tiempo de ejecución del algoritmo de Selection Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         
+        startTime=System.nanoTime();
+        //objetoOrdenamiento.ShellSort(arreglo);
+        endTime=System.nanoTime();
+        System.out.println("El tiempo de ejecución del algoritmo de Sheel Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
+        
+        startTime=System.nanoTime();
+        //objetoOrdenamiento.BubbleSort(arreglo);
+        endTime=System.nanoTime();
+        System.out.println("El tiempo de ejecución del algoritmo de Bubble Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
+        
+        startTime=System.nanoTime();
+        //objetoOrdenamiento.sort(arreglo, 0, arreglo.length-1); 
+        endTime=System.nanoTime();
+        System.out.println("El tiempo de ejecución del algoritmo de Merge Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
+        
+        startTime=System.nanoTime();
+        objetoOrdenamiento.ImprimirArregloAOrdenar(arreglo);
+        objetoOrdenamiento.QuickSort(arreglo, 0, arreglo.length-1); 
+        endTime=System.nanoTime();
+        System.out.println("El tiempo de ejecución del algoritmo de Quick Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
+        
+        System.out.println("El elemento buscado es: "+objetoBusqueda.busquedaBinaria(arreglo, 2, 0, arreglo.length));
+    
     }
     
 }
