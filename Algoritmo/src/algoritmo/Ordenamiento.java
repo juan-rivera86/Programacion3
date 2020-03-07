@@ -26,7 +26,7 @@ public class Ordenamiento {
     
     //Ordenamiento por insertion Sort
     public void InsertionSort(int[] arregloEntrada){
-        ImprimirArregloAOrdenar(arregloEntrada);
+       // ImprimirArregloAOrdenar(arregloEntrada);
         //Se debe iterar por todos los elementos del listado o arreglo
         for(int posicion=1; posicion < arregloEntrada.length;posicion++){
             int contadorComparacion=posicion;
@@ -39,7 +39,7 @@ public class Ordenamiento {
                 }
             }
             arregloEntrada[contadorComparacion]=numeroEvaluado;
-            ImprimirArregloAOrdenar(arregloEntrada);
+            //ImprimirArregloAOrdenar(arregloEntrada);
          }
     }
     
@@ -86,7 +86,7 @@ public class Ordenamiento {
                     }
                 }
             }
-              ImprimirArregloAOrdenar(arregloEntrada);
+              //ImprimirArregloAOrdenar(arregloEntrada);
         }
     }
     
@@ -183,13 +183,13 @@ public class Ordenamiento {
                 int temporal=arregloEntrada[j];
                 arregloEntrada[j]=arregloEntrada[i];
                 arregloEntrada[i]=temporal;
-                     ImprimirArregloAOrdenar(arregloEntrada);
+                    // ImprimirArregloAOrdenar(arregloEntrada);
             }
          }
              int temporal2=arregloEntrada[j];
              arregloEntrada[j]=arregloEntrada[low];
              arregloEntrada[low]=temporal2;
-                  ImprimirArregloAOrdenar(arregloEntrada);
+             //     ImprimirArregloAOrdenar(arregloEntrada);
             return j;
      }
      
