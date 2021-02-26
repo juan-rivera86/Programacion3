@@ -17,7 +17,7 @@ public class Algoritmo {
     public static void main(String[] args) {
         long startTime, endTime;
         //Crear un arreglo a ordenar
-        int[] arreglo={578,170,576,875,767,48,884,925,899,
+        /*int[] arreglo={578,170,576,875,767,48,884,925,899,
         120,502,226,416,755,850,427,19,694,22,594,864,255,841,583,
         884,155,711,684,924,458,709,516,911,653,555,314,734,185,
          964,936,366,284,147,282,730,102,796,673,37,299,739,620,277,
@@ -81,10 +81,10 @@ public class Algoritmo {
          678,317,498,188,716,974,317,337,85,430,63,182,904,22,519,774,140,138,214,464,552,869,
          887,323,485,573,222,823,746,472,98,407,777,229,226,738,237,677,981,286,226,946,805,550,
          841,981,521,55,284,662,528,19,448,599,651,288,66,121,465,435,89,71,784,753,168};
-        
-        //int[] arreglo={6,5,3,1,8,7,2,4};
+        */
+        int[] arreglo={6,5,3,1,8,7,2,4};
         Ordenamiento objetoOrdenamiento= new Ordenamiento();
-        Busqueda objetoBusqueda=new Busqueda();
+        //Busqueda objetoBusqueda=new Busqueda();
         startTime=System.nanoTime();
         //objetoOrdenamiento.InsertionSort(arreglo);
         endTime=System.nanoTime();
@@ -103,12 +103,12 @@ public class Algoritmo {
         System.out.println("El tiempo de ejecución del algoritmo de Sheel Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         
         startTime=System.nanoTime();
-        objetoOrdenamiento.BubbleSort(arreglo);
+        //objetoOrdenamiento.BubbleSort(arreglo);
         endTime=System.nanoTime();
         System.out.println("El tiempo de ejecución del algoritmo de Bubble Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         
         startTime=System.nanoTime();
-        //objetoOrdenamiento.sort(arreglo, 0, arreglo.length-1); 
+        objetoOrdenamiento.sort(arreglo, 0, arreglo.length-1); 
         endTime=System.nanoTime();
         System.out.println("El tiempo de ejecución del algoritmo de Merge Sort fue: "+((endTime-startTime)/1000000)+"milisegundo(s)");
         

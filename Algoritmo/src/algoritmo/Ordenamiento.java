@@ -114,6 +114,7 @@ public class Ordenamiento {
         int k = l; 
         while (i < n1 && j < n2) 
         { 
+            //se validan que el lado izquirdo L sea menor o igual al derecho
             if (L[i] <= R[j]) 
             { 
                 arregloEntrada[k] = L[i]; 
@@ -126,6 +127,7 @@ public class Ordenamiento {
             } 
             k++; 
         } 
+        //se imprime el resultado parcial del arreglo
         ImprimirArregloAOrdenar(arregloEntrada);
   
         //se copian los elementos restantes en L
@@ -153,11 +155,12 @@ public class Ordenamiento {
             // se busca el punto medio
             int puntoMedio = (extremoIzquierdo+extremoDerecho)/2; 
   
-            // Sort first and second halves 
+            // Se toma primero el lado izquierdo
             sort(arregloEntrada, extremoIzquierdo, puntoMedio); 
+            //se toma el lado derecho
             sort(arregloEntrada , puntoMedio+1, extremoDerecho); 
   
-            // Merge the sorted halves 
+            // Merge (mezcla) los arreglos ya organizados.
             Merge(arregloEntrada, extremoIzquierdo, puntoMedio, extremoDerecho); 
         } 
     }
